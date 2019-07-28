@@ -1,0 +1,52 @@
+.container-cards{
+    display: flex;
+}
+
+.card{
+    margin-left : 250px;
+}
+
+.titre{
+    margin-left : 50px;
+}
+
+.bouton-card{
+    display:flex;
+}
+
+.btn-primary{
+    margin-left: 3px;
+}
+
+.tableau{
+    height: 150px;
+    width: 1500px;
+    margin-left: 200px;
+}
+
+.footer{
+    display: flex;
+}
+
+.formulaire{
+    display: flex;
+    align-items: column;
+    margin-left: 200px;
+}
+
+.reserver{
+    margin-left: 200px;
+}
+
+.row .form-group {
+    margin-left : 5px;
+}
+
+.footer button {
+    margin-top: 20px;
+}
+
+.bouton-envoyer{
+    margin-left: 200px;
+    margin-bottom: 50px;
+}

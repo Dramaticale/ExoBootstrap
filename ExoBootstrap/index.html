@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Arkham</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <img src="image/logo.svg" width="30" height="30">
+        <a class="navbar-brand" href="#">Arkham</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Films</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Horaires</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+            <h1 class="display-4">Bienvenue à Arkham</h1>
+            <p class="lead">Retrouvez la liste de nos films préférés ainsi que les horaires de nos séances</p>
+            <hr class="my-4">
+            <p>Pour des informations supplémentaires ou pour réserver</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Nous contacter</a>
+    </div>
+
+    <div class="titre">
+      <h1>Nos films</h1>
+    </div>
+    <hr>
+
+    <div class="container-cards">
+      <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+        <img src="/image/120x80.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">La nuit du chasseur</h5>
+          <p class="card-text">Un prêcheur inquiétant poursuit dans l'Amérique rurale deux enfants dont le père vient d'être condamné pour vol et meurtre.</p>
+          <div class="bouton-card">
+    
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Réserver</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">La nuit du chasseur</h5>
+                    <hr>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Lundi</th>
+                          <th scope="col">Mardi</th>
+                          <th scope="col">Mercredi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>11:00</td>
+                          <td>11:00</td>
+                          <td>11:00</td>
+                        </tr>
+                        <tr>
+                          <td>14:00</td>
+                          <td>14:30</td>
+                          <td>14:00</td>
+                        </tr>
+                        <tr>
+                          <td>18:00</td>
+                          <td>22:00</td>
+                          <td>19:00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success">Réserver</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary">Horaires</a>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+        <img src="/image/120x80.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Psychose</h5>
+          <p class="card-text">Marion Crane en a assez de ne pouvoir mener sa vie comme elle l'entend. Son travail ne la passionne plus...</p>
+          <div class="bouton-card">
+            <a href="#" class="btn btn-success">Reserver</a>
+            <a href="#" class="btn btn-primary">Horaires</a>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+        <img src="/image/120x80.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Freaks</h5>
+          <p class="card-text">Des êtres difformes se produisent dans un célèbre cirque, afin de s'exhiber en tant que phénomènes de foire...</p>
+          <div class="bouton-card">
+            <a href="#" class="btn btn-success">Reserver</a>
+            <a href="#" class="btn btn-primary">Horaires</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="titre">
+      <h1>Nos horaires</h1>
+    </div>
+    <hr>
+
+    <div class="tableau">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Lundi</th>
+            <th scope="col">Mardi</th>
+            <th scope="col">Mercredi</th>
+            <th scope="col">Jeudi</th>
+            <th scope="col">Vendredi</th>
+            <th scope="col">Samedi</th>
+            <th scope="col">Dimanche</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Matin</th>
+            <td>None</td>
+            <td>9:00 - 12:00</td>
+            <td>9:00 - 12:00</td>
+            <td>9:00 - 12:00</td>
+            <td>9:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <th scope="row">Aprem</th>
+            <td>14:00 - 20:00</td>
+            <td>14:00 - 20:00</td>
+            <td>14:00 - 20:00</td>
+            <td>14:00 - 00:00</td>
+            <td>14:00 - 00:00</td>
+            <td>14:00 - 00:00</td>
+            <td>None</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="titre">
+      <h1>Nous contacter</h1>
+    </div>
+    <hr>
+
+    <div class="footer">
+      <div class="formulaire">
+        <form>
+          <div class="row">
+            <div class="col">
+                Prénom :
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                E-mail :
+              <input type="text" class="form-control">
+            </div>
+          </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Votre problème</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                </div>
+        </form>
+
+      </div>
+      <div class="reserver">
+        <h3>Réserver :</h3>
+        <div class="row">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Film</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option disabled selected>Quel film ?</option>
+                  <option>La nuit du chasseur</option>
+                  <option>Psychose</option>
+                  <option>Freaks</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Horaire</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option disabled selected>Quel horaire ?</option>
+                  <option>9:00</option>
+                  <option>10:30</option>
+                  <option>14:00</option>
+                  <option>15:30</option>
+                  <option>17:00</option>
+                  <option>18:30</option>
+                  <option>20:00 (du jeudi au samedi)</option>
+                  <option>21:30 (du jeudi au samedi)</option>
+                </select>
+              </div>
+        </div>
+        Age
+        <div class="row">
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">< 18 ans</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">18-59 ans</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">>60 ans</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Etudiant</label>
+            </div>
+        </div>
+      <button type="button" class="btn btn-primary">Réserver</button>
+      </div>
+    </div>
+    <div class="bouton-envoyer">
+      <button type="button" class="btn btn-primary">Envoyer</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
